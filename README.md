@@ -1,5 +1,4 @@
-EntitlementAPI_Inventor
-==========
+#EntitlementAPI_Inventor
 
 Shows how to use the **Entitlement API** from an Inventor AddIn. See [blog article](http://adndevblog.typepad.com/manufacturing/2015/03/entitlement-api-in-inventor.html) about it.
 
