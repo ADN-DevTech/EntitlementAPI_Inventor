@@ -1,0 +1,14 @@
+<Addin Type="Standard">
+  <!--Created for Autodesk Inventor Version 19.0-->
+  <ClassId>{dc8b7679-62eb-4a59-8e9a-a17c4d4c382a}</ClassId>
+  <ClientId>{dc8b7679-62eb-4a59-8e9a-a17c4d4c382a}</ClientId>
+  <DisplayName>GetUserIdProject</DisplayName>
+  <Description>GetUserIdProject</Description>
+  <Assembly>GetUserIdProject.dll</Assembly>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <SupportedSoftwareVersionGreaterThan>18..</SupportedSoftwareVersionGreaterThan>
+  <DataVersion>1</DataVersion>
+  <UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>

@@ -1,0 +1,7 @@
+Y:\AppData\Roaming\Autodesk\ApplicationPlugins\GetUserIdProject\GetUserIdProject.dll
+Y:\AppData\Roaming\Autodesk\ApplicationPlugins\GetUserIdProject\GetUserIdProject.pdb
+Y:\Adam\GitHub\ADN-DevTech\EntitlementAPI_Inventor\GetUserIdProject\obj\Debug\GetUserIdProject.csprojResolveAssemblyReference.cache
+Y:\Adam\GitHub\ADN-DevTech\EntitlementAPI_Inventor\GetUserIdProject\obj\Debug\GetUserIdProject.dll
+Y:\Adam\GitHub\ADN-DevTech\EntitlementAPI_Inventor\GetUserIdProject\obj\Debug\GetUserIdProject.pdb
+Y:\Adam\GitHub\ADN-DevTech\EntitlementAPI_Inventor\GetUserIdProject\bin\debug\GetUserIdProject.dll
+Y:\Adam\GitHub\ADN-DevTech\EntitlementAPI_Inventor\GetUserIdProject\bin\debug\GetUserIdProject.pdb

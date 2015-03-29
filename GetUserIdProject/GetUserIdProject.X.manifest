@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="GetUserIdProject" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{dc8b7679-62eb-4a59-8e9a-a17c4d4c382a}" progid="GetUserIdProject.StandardAddInServer" threadingModel="Both" name="GetUserIdProject.StandardAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="GetUserIdProject.dll" hashalg="SHA1"></file>
+
+</assembly>
