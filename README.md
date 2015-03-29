@@ -1,7 +1,7 @@
 EntitlementAPI_Inventor
 ==========
 
-Shows how to use the [Entitlement API] from an Inventor AddIn
+Shows how to use the **Entitlement API** from an Inventor AddIn
 
 ##Dependencies
 
@@ -11,9 +11,9 @@ None
 
 * Compile the project
 
-* Place the Autodesk.GetUserIdProject.Inventor.addin file in one of the folders that Inventor monitors for AddIn's, e.g. "C:\ProgramData\Autodesk\ApplicationPlugins" 
+* Place the Autodesk.GetUserIdProject.Inventor.addin file in one of the folders that Inventor monitors for AddIn's, e.g. **"C:\ProgramData\Autodesk\ApplicationPlugins"** 
 
-* In that file modify the information surrounded by the &lt;Assembly&gt;&lt;/Assembly&gt; tags so that it has the correct location of the [GetUserIdProject.dll]
+* In that file modify the information surrounded by the &lt;Assembly&gt;&lt;/Assembly&gt; tags so that it has the correct location of the **GetUserIdProject.dll**
 
 ## License
 
