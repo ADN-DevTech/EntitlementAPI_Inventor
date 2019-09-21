@@ -43,6 +43,7 @@ namespace GetUserIdProject
       {
         try
         {
+          m_inventorApplication.Login();
           string userId = "";
           mgr.GetUserId(ref userId);
           string userName = "";
