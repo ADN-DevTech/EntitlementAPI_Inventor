@@ -1,8 +1,9 @@
 using System;
 using System.Runtime.InteropServices;
+using Autodesk.WebServices;
 using Inventor;
 using Microsoft.Win32;
-using MsgBox = System.Windows.Forms.MessageBox; 
+using MsgBox = System.Windows.Forms.MessageBox;
 
 namespace GetUserIdProject
 {
@@ -35,18 +36,27 @@ namespace GetUserIdProject
       // TODO: Add ApplicationAddInServer.Activate implementation.
       // e.g. event initialization, command creation etc.
 
-      try
+      CWebServicesManager mgr = new CWebServicesManager();
+      bool isInitialized = mgr.Initialize();
+
+      if (isInitialized)
       {
-        string userName;
-        string userId = WebServicesUtils.GetUserId(out userName);
-        MsgBox.Show(
-          "User ID = '" + userId + "\n" +
-          "User Name = '" + userName + "'");
+        try
+        {
+          string userId = "";
+          mgr.GetUserId(ref userId);
+          string userName = "";
+          mgr.GetLoginUserName(ref userName);
+          MsgBox.Show(
+            "User ID = '" + userId + "\n" +
+            "User Name = '" + userName + "'");
+        }
+        catch (Exception ex)
+        {
+          MsgBox.Show(ex.Message);
+        }
       }
-      catch (Exception ex)
-      {
-        MsgBox.Show(ex.Message);
-      }
+
     }
 
     public void Deactivate()

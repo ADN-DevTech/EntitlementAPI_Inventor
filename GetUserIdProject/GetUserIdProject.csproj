@@ -30,7 +30,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\debug\</OutputPath>
+    <OutputPath>C:\ProgramData\Autodesk\Inventor 2019\Addins\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
@@ -78,6 +78,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AddinNETFramework.AdWebServicesWrapper">
+      <HintPath>C:\Program Files\Autodesk\Inventor 2020\Bin\AddinNETFramework.AdWebServicesWrapper.dll</HintPath>
+    </Reference>
     <Reference Include="Autodesk.Inventor.Interop, Version=20.0.0.0, Culture=neutral, PublicKeyToken=d84147f8b4276564, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -95,13 +98,14 @@
     <Compile Include="StandardAddInServer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WebServicesUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GetUserIdProject.X.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Autodesk.GetUserIdProject.Inventor.addin" />
+    <None Include="Autodesk.GetUserIdProject.Inventor.addin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.txt" />
@@ -110,7 +114,7 @@
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
-    <PostBuildEvent>call "%25VS110COMNTOOLS%25vsvars32"
+    <PostBuildEvent>call "%25VS150COMNTOOLS%25VsDevCmd" 
 			mt.exe -manifest "$(ProjectDir)GetUserIdProject.X.manifest" -outputresource:"$(TargetPath)";#2</PostBuildEvent>
   </PropertyGroup>
 </Project>
